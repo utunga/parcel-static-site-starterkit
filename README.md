@@ -34,6 +34,12 @@ Read detailed blog on how and why to use at - [https://dev.to/insanenaman/starte
 
 4- Build(If you ready to deploy) - `npm run build` or `yarn run build`
 
+5- Build_Docs(to get it ready to push to github pages)
+   - update the CNAME file to have your domain name (just the domain name without www or https or http)
+   - setup your repo on github  to serve 'docs' and expect CNAME
+   - `npm run build_docs`
+   - git commit the docs dir and git push 
+
 ### Commands available 🛠:
 
 There are only three commands

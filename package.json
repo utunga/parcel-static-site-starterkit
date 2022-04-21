@@ -6,7 +6,8 @@
   "scripts": {
     "reset": "rimraf dist && rimraf .cache",
     "start": "rimraf dist && parcel serve src/index.html",
-    "build": "rimraf dist && parcel build src/index.html --public-url ./"
+    "build": "rimraf dist && parcel build src/index.html --public-url ./",
+    "build_docs": "rimraf dist && parcel build src/index.html --public-url ./ && rm -rf docs && mv dist docs && cp CNAME docs/CNAME"
   },
   "author": "Naman Gupta",
   "license": "ISC",
